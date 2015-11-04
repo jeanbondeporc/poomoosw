@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="21ad96ae-2b4d-4eea-95c3-a54bcd4061bd" name="gameCreation" linkedPackageId="6a986e9c-8bbd-4097-b941-c68fd402033d" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="542c9ecb-2ee3-4aa9-b7d4-0705b566c6b8">
+      <profileInstance Id="26b549ca-7945-4674-bb0a-c32cb345031d" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="354c2850-f99a-46a2-935c-dd8fd192fead">
+      <profileInstance Id="2b560ad0-36ca-46f2-8b17-20147d1115ed" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="aeabacf5-dbce-40cd-8891-d45cfd629117" name="gameCreation" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="0e8089ba-377c-42c0-9eb1-919cae1a3e05" />
+        <nodes>
+          <initialNode Id="96985293-5d0a-4dfc-88d2-7ab063f62701" name="Initial1" isLeaf="false">
+            <elementDefinition Id="b65ee6ab-4d9d-4d89-b633-c05e92397b0e" />
+            <flowNodeTargets>
+              <controlFlow Id="f52097c5-ba98-49e8-9c46-35f792ccbc80" isLeaf="false">
+                <opaqueActionMoniker Id="29535215-9587-4cb9-bd30-fb69a513d5ea" LastKnownName="create Game" />
+                <elementDefinition Id="b7ff2b9c-a3b7-495c-937d-395c96cb0c8a" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="29535215-9587-4cb9-bd30-fb69a513d5ea" name="create Game" isLeaf="false">
+            <elementDefinition Id="4c0f8b48-4f38-4793-b2d2-b5c4d9c8fc77" />
+            <flowNodeTargets>
+              <controlFlow Id="ac0faada-db34-4bcc-834b-5e5e11ed1d23" isLeaf="false">
+                <opaqueActionMoniker Id="337603ca-638e-4092-9c3e-0e6641a579f7" LastKnownName="create Players" />
+                <elementDefinition Id="ee5347df-9aaa-4f7b-94d6-daea1389980a" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="337603ca-638e-4092-9c3e-0e6641a579f7" name="create Players" isLeaf="false">
+            <elementDefinition Id="7fc52635-712b-4583-8086-f597894bc284" />
+            <flowNodeTargets>
+              <controlFlow Id="6b8ffa79-7e8c-4635-9a6a-0bb97fc37dce" isLeaf="false">
+                <forkNodeMoniker Id="ee673594-01cf-423e-b1de-6c750ae30821" LastKnownName="Fork1" />
+                <elementDefinition Id="849ed3bc-dd62-4ffd-93fd-5c05ccaa999c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="16b51d42-2227-4b8e-8b1f-ced5225dabe0" name="create Map" isLeaf="false">
+            <elementDefinition Id="d84d8533-a556-4202-b1e2-a1434bfe72ca" />
+            <flowNodeTargets>
+              <controlFlow Id="52a6f20f-7d52-4d0c-9c58-de00997ac1af" isLeaf="false">
+                <opaqueActionMoniker Id="d0801d65-4f29-4b74-9473-3b9dd86286d0" LastKnownName="createTiles" />
+                <elementDefinition Id="a7af01bf-a649-4886-9ffe-3fb59101aafb" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <forkNode Id="ee673594-01cf-423e-b1de-6c750ae30821" name="Fork1" isLeaf="false">
+            <elementDefinition Id="74b701b9-59f5-42e0-a5e9-c8a2cdd5636c" />
+            <flowNodeTargets>
+              <controlFlow Id="2935278c-a0bc-45e9-a849-b1cc57f0b495" isLeaf="false">
+                <opaqueActionMoniker Id="16b51d42-2227-4b8e-8b1f-ced5225dabe0" LastKnownName="create Map" />
+                <elementDefinition Id="58d3e0dd-a7eb-4923-8a57-f533f175a11f" />
+              </controlFlow>
+              <controlFlow Id="81d0435a-6902-4aec-8a80-25edbe37b383" isLeaf="false">
+                <opaqueActionMoniker Id="b0716fd3-00ea-4497-bb94-16420c6e8ac2" LastKnownName="create Units" />
+                <elementDefinition Id="03cc4987-3e17-4272-8e4f-af59bfc786a5" />
+              </controlFlow>
+              <controlFlow Id="de095cbf-cc4a-4d63-be74-02fa446cacc2" isLeaf="false">
+                <opaqueActionMoniker Id="49b9d4ce-e019-4c96-b4df-8c3fb92437cc" LastKnownName="create Turn" />
+                <elementDefinition Id="e32d1e96-753c-4dc8-a1a8-91c816db2e66" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <opaqueAction Id="b0716fd3-00ea-4497-bb94-16420c6e8ac2" name="create Units" isLeaf="false">
+            <elementDefinition Id="ae524995-e03f-4907-acc7-2770e6220175" />
+            <flowNodeTargets>
+              <controlFlow Id="e74ef673-2ca6-45cd-9b74-e4884b342891" isLeaf="false">
+                <opaqueActionMoniker Id="875215bb-5a19-4bac-b3be-2ad0ceb687b5" LastKnownName="create Position" />
+                <elementDefinition Id="038075e2-5a2e-47d1-ab83-5391ccc7f620" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="d0801d65-4f29-4b74-9473-3b9dd86286d0" name="createTiles" isLeaf="false">
+            <elementDefinition Id="9b669d1c-dcd7-4636-a7f5-a647905c2d71" />
+            <flowNodeTargets>
+              <controlFlow Id="23b62ef3-ce5d-4c3f-b199-a9b163cd3d74" isLeaf="false">
+                <opaqueActionMoniker Id="fda386e1-4d7f-4f52-8c0c-3a19775a1d26" LastKnownName="create Position" />
+                <elementDefinition Id="8d591d83-422f-49e5-927e-b317371bb006" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="fda386e1-4d7f-4f52-8c0c-3a19775a1d26" name="create Position" isLeaf="false">
+            <elementDefinition Id="95bba33b-8079-47c1-b271-74b82c237f12" />
+          </opaqueAction>
+          <opaqueAction Id="875215bb-5a19-4bac-b3be-2ad0ceb687b5" name="create Position" isLeaf="false">
+            <elementDefinition Id="b00d4c49-00cf-414e-ba00-1c795d49105e" />
+          </opaqueAction>
+          <activityFinalNode Id="ceb0d4bd-2260-4178-9836-6884c96628cb" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="4f6657a6-6e48-4969-bcb5-8b9dfe4cb548" />
+          </activityFinalNode>
+          <opaqueAction Id="49b9d4ce-e019-4c96-b4df-8c3fb92437cc" name="create Turn" isLeaf="false">
+            <elementDefinition Id="4f8eb885-9dba-4e15-850a-0155d33c995b" />
+            <flowNodeTargets>
+              <controlFlow Id="8cd9b141-fbd8-44f8-a488-ee41429aabe3" isLeaf="false">
+                <activityFinalNodeMoniker Id="ceb0d4bd-2260-4178-9836-6884c96628cb" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="2a2c1bff-cb4d-4c71-9ec6-822642f63802" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="6a986e9c-8bbd-4097-b941-c68fd402033d" name="UML">
+    <elementDefinition Id="4b360c37-6a26-4bfd-bde2-92a1f0c08108" />
+  </package>
+</activityRootModel>
