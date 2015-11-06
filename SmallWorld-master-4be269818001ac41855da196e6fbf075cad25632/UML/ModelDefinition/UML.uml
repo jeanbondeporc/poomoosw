@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
   dslVersion="1.0.0.0"
   Id="4b360c37-6a26-4bfd-bde2-92a1f0c08108"
   name="UML" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -2506,11 +2506,11 @@
             isLeaf="false">
             <flowNodeTargets>
               <controlFlow
-                Id="e89e2b4e-d04c-4712-986b-7c16f9bfc6dd"
+                Id="ef644320-9c45-4f20-9f29-44cbd635cc8b"
                 isLeaf="false">
-                <decisionNodeMoniker
-                  Id="693a1816-4c39-45b3-86c6-aac3964bb667"
-                  LastKnownName="Decision1"
+                <opaqueActionMoniker
+                  Id="c986fc4c-79e3-45c0-a2b3-14a5d4108932"
+                  LastKnownName="Select unit"
                   LastKnownLocation="UML.uml" />
               </controlFlow>
             </flowNodeTargets>
@@ -2519,21 +2519,126 @@
             Id="4d265fe2-6375-4d5f-a882-357c07e4f4ae"
             name="ActivityFinal1"
             isLeaf="false" />
+          <opaqueAction
+            Id="c986fc4c-79e3-45c0-a2b3-14a5d4108932"
+            name="Select unit"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="3e163152-560d-48a8-8a9c-cc97e9de585d"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="f14c1203-32e0-4ede-a1c0-71b834c692f6"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
           <decisionNode
-            Id="693a1816-4c39-45b3-86c6-aac3964bb667"
+            Id="f14c1203-32e0-4ede-a1c0-71b834c692f6"
             name="Decision1"
             isLeaf="false">
             <flowNodeTargets>
               <controlFlow
-                Id="16b50ad1-098c-4d52-85e0-446dd2b57b3d"
+                Id="a5256dbc-e896-4c99-a69c-af6837444837"
+                guard="Enough PA"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="c43b9d3d-b095-4210-b84a-fedf263d8c2b"
+                  LastKnownName="Move on"
+                  LastKnownLocation="UML.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="798abf04-e1a5-4826-a3d9-32a071b865ba"
+                guard="Impossible action"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="c986fc4c-79e3-45c0-a2b3-14a5d4108932"
+                  LastKnownName="Select unit"
+                  LastKnownLocation="UML.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="8e32bbf2-1601-4d82-93ad-cba0b0b5ef1e"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="91073370-7b39-4433-8b8c-c16178cd0003"
+                  LastKnownName="Attack unit"
+                  LastKnownLocation="UML.uml" />
+                <description>Enough PA &amp;&amp; Enough Range</description>
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="c43b9d3d-b095-4210-b84a-fedf263d8c2b"
+            name="Move on"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="d15bd6ca-2ffc-4af3-a7ee-5e0824caf653"
+                guard="Enough PA &amp;&amp; Enough range"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="91073370-7b39-4433-8b8c-c16178cd0003"
+                  LastKnownName="Attack unit"
+                  LastKnownLocation="UML.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="aadd38f6-ff04-4e1b-a361-aedc621fb850"
+                guard="all units performed action"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="647eb7fe-6a76-4618-82a7-37a9e2349642"
+                  LastKnownName="End turn"
+                  LastKnownLocation="UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="91073370-7b39-4433-8b8c-c16178cd0003"
+            name="Attack unit"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="862d1ae6-04c0-4ae5-9d8c-4a39a9ba3b0e"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="647eb7fe-6a76-4618-82a7-37a9e2349642"
+                  LastKnownName="End turn"
+                  LastKnownLocation="UML.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="c6a9fc49-51b6-4afe-816f-adddd9f702c2"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="c986fc4c-79e3-45c0-a2b3-14a5d4108932"
+                  LastKnownName="Select unit"
+                  LastKnownLocation="UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="647eb7fe-6a76-4618-82a7-37a9e2349642"
+            name="End turn"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="3a9d7a44-f5ce-424b-a5f1-a42ee5100cfd"
                 isLeaf="false">
                 <activityFinalNodeMoniker
                   Id="4d265fe2-6375-4d5f-a882-357c07e4f4ae"
                   LastKnownName="ActivityFinal1"
                   LastKnownLocation="UML.uml" />
               </controlFlow>
+              <controlFlow
+                Id="a382997a-946d-41cc-907e-2c69b8bd1236"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="c986fc4c-79e3-45c0-a2b3-14a5d4108932"
+                  LastKnownName="Select unit"
+                  LastKnownLocation="UML.uml" />
+              </controlFlow>
             </flowNodeTargets>
-          </decisionNode>
+          </opaqueAction>
         </nodes>
       </activity>
     </packageHasNamedElement>
