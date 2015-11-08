@@ -32,6 +32,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -39,26 +40,39 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DemoMap.cs" />
+    <Compile Include="Action.cs" />
+    <Compile Include="AttackAction.cs" />
+    <Compile Include="Behavior.cs" />
+    <Compile Include="EEndGameType.cs" />
     <Compile Include="EGameType.cs" />
-    <Compile Include="elfUnit.cs" />
+    <Compile Include="ElfBehavior.cs" />
+    <Compile Include="ElfUnit.cs" />
     <Compile Include="ERace.cs" />
+    <Compile Include="ForestTile.cs" />
     <Compile Include="Game.cs" />
+    <Compile Include="HumanBehavior.cs" />
     <Compile Include="HumanUnit.cs" />
     <Compile Include="IMap.cs" />
     <Compile Include="IPlayer.cs" />
+    <Compile Include="ITurn.cs" />
+    <Compile Include="IUndo.cs" />
     <Compile Include="Map.cs" />
     <Compile Include="MapBuilder.cs" />
+    <Compile Include="MountainTile.cs" />
+    <Compile Include="MoveAction.cs" />
+    <Compile Include="OrcBehavior.cs" />
     <Compile Include="OrcUnit.cs" />
     <Compile Include="PlainTile.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Position.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SelectAction.cs" />
     <Compile Include="Tile.cs" />
     <Compile Include="Turn.cs" />
-    <Compile Include="tyleFlyweight.cs" />
+    <Compile Include="TyleFlyweight.cs" />
     <Compile Include="Unit.cs" />
     <Compile Include="UnitFactory.cs" />
+    <Compile Include="WaterTile.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="smallwold.cd" />

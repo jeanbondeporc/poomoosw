@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner"
   dslVersion="1.0.0.0"
   Id="4b360c37-6a26-4bfd-bde2-92a1f0c08108"
   name="UML" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -2591,6 +2591,14 @@
                   LastKnownName="End turn"
                   LastKnownLocation="UML.uml" />
               </controlFlow>
+              <controlFlow
+                Id="0397f1f1-c7ec-4911-9eba-2da9af3aebf4"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="c986fc4c-79e3-45c0-a2b3-14a5d4108932"
+                  LastKnownName="Select unit"
+                  LastKnownLocation="UML.uml" />
+              </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
           <opaqueAction
@@ -2600,6 +2608,7 @@
             <flowNodeTargets>
               <controlFlow
                 Id="862d1ae6-04c0-4ae5-9d8c-4a39a9ba3b0e"
+                guard="all units performed action"
                 isLeaf="false">
                 <opaqueActionMoniker
                   Id="647eb7fe-6a76-4618-82a7-37a9e2349642"
@@ -2629,18 +2638,18 @@
                   LastKnownName="ActivityFinal1"
                   LastKnownLocation="UML.uml" />
               </controlFlow>
-              <controlFlow
-                Id="a382997a-946d-41cc-907e-2c69b8bd1236"
-                isLeaf="false">
-                <opaqueActionMoniker
-                  Id="c986fc4c-79e3-45c0-a2b3-14a5d4108932"
-                  LastKnownName="Select unit"
-                  LastKnownLocation="UML.uml" />
-              </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
         </nodes>
       </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="dfaec9d4-1508-42ac-8d1c-8607c4294ff6"
+        name="Component1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

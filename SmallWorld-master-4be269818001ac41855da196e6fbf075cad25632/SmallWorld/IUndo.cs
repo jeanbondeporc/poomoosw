@@ -5,7 +5,8 @@ using System.Text;
 
 namespace SmallWorld.Model
 {
-    public class PlainTile : Tile
+    public interface IUndo
     {
+        void Undo();
     }
 }

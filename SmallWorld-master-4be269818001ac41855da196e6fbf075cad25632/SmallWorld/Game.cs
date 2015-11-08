@@ -7,6 +7,7 @@ namespace SmallWorld.Model
 {
     public class Game
     {
+
         public IPlayer Player2
         {
             get
@@ -74,17 +75,56 @@ namespace SmallWorld.Model
             }
         }
 
+        public System.Collections.Generic.List<SmallWorld.Model.Turn> turns
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+
+            set
+            {
+            }
+        }
+
+        public static Game Instance
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+
+            set
+            {
+            }
+        }
+
         public void createGame(EGameType gameType)
         {
             throw new System.NotImplementedException();
         }
 
-        public void initUnits(IList<Unit> units)
+        public Player initOrder()
         {
             throw new System.NotImplementedException();
         }
 
-        public Player initOrder()
+        public void initPlayers()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void startNextTurn()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void gameEnded(EEndGameType endType)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void turnEnded()
         {
             throw new System.NotImplementedException();
         }

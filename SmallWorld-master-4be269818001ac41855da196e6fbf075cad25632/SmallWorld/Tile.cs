@@ -18,5 +18,51 @@ namespace SmallWorld.Model
             {
             }
         }
+
+        public List<Unit> Units
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+
+            set
+            {
+            }
+        }
+
+        public static List<System.Drawing.Bitmap> bitmapsTiles
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+
+            set
+            {
+            }
+        }
+
+        public System.Drawing.Bitmap currentBitmap
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+
+            set
+            {
+            }
+        }
+
+        public void unitEntered(Unit unit)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void unitLeft(Unit unit)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

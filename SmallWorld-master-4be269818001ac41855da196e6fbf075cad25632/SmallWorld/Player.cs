@@ -7,6 +7,19 @@ namespace SmallWorld.Model
 {
     public class Player : IPlayer
     {
+        public string name
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+
+            set
+            {
+                throw new NotImplementedException();
+            }
+        }
+
         public ERace race
         {
             get
@@ -33,18 +46,12 @@ namespace SmallWorld.Model
             }
         }
 
-        public String name
+        public int getScore()
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
+            throw new NotImplementedException();
         }
 
-        public int getScore()
+        public void initUnits()
         {
             throw new NotImplementedException();
         }

@@ -12,8 +12,7 @@ namespace SmallWorld.Model
             get;
             set;
         }
-
-        Position Position
+        Tile currentTile
         {
             get;
             set;
@@ -36,9 +35,7 @@ namespace SmallWorld.Model
             get;
             set;
         }
-
-        void attack(Tile tile);
-
-        void move(Tile tile);
+        Behavior Behavior { get; set; }
+        void resetActionPoints();
     }
 }

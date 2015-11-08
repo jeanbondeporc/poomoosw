@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="3c997d35-ab0c-46d8-9be0-29b0019ce515" name="gameTurn" linkedPackageId="ea132d62-9bc5-4a6d-a25e-d4752a87586f" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="3c997d35-ab0c-46d8-9be0-29b0019ce515" name="gameTurn" linkedPackageId="ea132d62-9bc5-4a6d-a25e-d4752a87586f" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
   <packagedElements>
     <activityRootModelHasActivity>
       <activity Id="bf3464f5-7b0d-4159-84cb-09477ff8fead" name="gameTurn" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
@@ -55,12 +55,16 @@
                 <opaqueActionMoniker Id="f6d68c14-4152-4cee-9116-ea34d9c77526" LastKnownName="End turn" />
                 <elementDefinition Id="aadd38f6-ff04-4e1b-a361-aedc621fb850" />
               </controlFlow>
+              <controlFlow Id="3bab908c-e741-4963-aeab-dc000a370fd2" isLeaf="false">
+                <opaqueActionMoniker Id="f6a63a48-24db-4e67-bf58-af4d37b613d5" LastKnownName="Select unit" />
+                <elementDefinition Id="0397f1f1-c7ec-4911-9eba-2da9af3aebf4" />
+              </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
           <opaqueAction Id="1b6a2230-9e88-422e-8a2c-4d3c4b9f43e7" name="Attack unit" isLeaf="false">
             <elementDefinition Id="91073370-7b39-4433-8b8c-c16178cd0003" />
             <flowNodeTargets>
-              <controlFlow Id="51f5a274-c8e9-434b-ac75-323137a52d44" isLeaf="false">
+              <controlFlow Id="51f5a274-c8e9-434b-ac75-323137a52d44" guard="all units performed action" isLeaf="false">
                 <opaqueActionMoniker Id="f6d68c14-4152-4cee-9116-ea34d9c77526" LastKnownName="End turn" />
                 <elementDefinition Id="862d1ae6-04c0-4ae5-9d8c-4a39a9ba3b0e" />
               </controlFlow>
@@ -76,10 +80,6 @@
               <controlFlow Id="b628b7f3-19df-4b7b-aa6d-4221905932e5" isLeaf="false">
                 <activityFinalNodeMoniker Id="8fe062ec-f93b-430f-8322-28f213c5d05e" LastKnownName="ActivityFinal1" />
                 <elementDefinition Id="3a9d7a44-f5ce-424b-a5f1-a42ee5100cfd" />
-              </controlFlow>
-              <controlFlow Id="b074e915-eec1-4a04-acb1-6de25f82bacf" isLeaf="false">
-                <opaqueActionMoniker Id="f6a63a48-24db-4e67-bf58-af4d37b613d5" LastKnownName="Select unit" />
-                <elementDefinition Id="a382997a-946d-41cc-907e-2c69b8bd1236" />
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>

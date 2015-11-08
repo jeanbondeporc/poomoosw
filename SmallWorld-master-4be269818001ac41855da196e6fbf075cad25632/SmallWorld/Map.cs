@@ -7,6 +7,11 @@ namespace SmallWorld.Model
 {
     public class Map
     {
+        public Map(EGameType gametype)
+        {
+            throw new System.NotImplementedException();
+        }
+
         public IList<Tile> tiles
         {
             get
@@ -18,18 +23,31 @@ namespace SmallWorld.Model
             }
         }
 
-        public int size
+        public int width
         {
             get
             {
                 throw new System.NotImplementedException();
             }
+
             set
             {
             }
         }
 
-        public Tile randomTyle()
+        public int height
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+
+            set
+            {
+            }
+        }
+
+        public void getTileFromPosition(int x, int y)
         {
             throw new System.NotImplementedException();
         }

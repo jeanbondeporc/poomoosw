@@ -1,1 +1,5 @@
 C:\Users\flardeux\Desktop\projetPOO\SmallWorld-master-4be269818001ac41855da196e6fbf075cad25632\SmallWorld\obj\Debug\SmallWorld.Model.csprojResolveAssemblyReference.cache
+D:\Code\C#\poomoosw\SmallWorld-master-4be269818001ac41855da196e6fbf075cad25632\SmallWorld\bin\Debug\SmallWorld.Model.dll
+D:\Code\C#\poomoosw\SmallWorld-master-4be269818001ac41855da196e6fbf075cad25632\SmallWorld\bin\Debug\SmallWorld.Model.pdb
+D:\Code\C#\poomoosw\SmallWorld-master-4be269818001ac41855da196e6fbf075cad25632\SmallWorld\obj\Debug\SmallWorld.Model.dll
+D:\Code\C#\poomoosw\SmallWorld-master-4be269818001ac41855da196e6fbf075cad25632\SmallWorld\obj\Debug\SmallWorld.Model.pdb

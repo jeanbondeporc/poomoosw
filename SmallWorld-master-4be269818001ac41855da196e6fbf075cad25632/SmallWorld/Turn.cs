@@ -18,17 +18,49 @@ namespace SmallWorld.Model
             }
         }
 
-        public void moveOn(Unit unit, Tile tile)
+        public List<Action> actionsHistory
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+
+            set
+            {
+            }
+        }
+
+        public void attackTile(Tile targetedTile)
         {
             throw new System.NotImplementedException();
         }
 
-        public void attackTile(Unit unit, Tile tile)
+        public void beginTurn()
         {
             throw new System.NotImplementedException();
         }
 
-        public void resetPA()
+        public void moveUnit(Tile destinination)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void selectUnit(Unit unit)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public bool canMoveOnTile(Tile tile)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public bool canAttackTile(Tile target)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public bool isEnemyPlayerHasMoreUnits()
         {
             throw new System.NotImplementedException();
         }
