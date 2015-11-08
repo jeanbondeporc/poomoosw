@@ -1,11 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30501.0
+VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmallWorld.Model", "SmallWorld\SmallWorld.Model.csproj", "{1A32C66F-3608-48BC-A3C6-BD6847CC97FF}"
 EndProject
 Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "UML", "UML\UML.modelproj", "{C8AAE292-0392-431B-AC23-E81C1BF874A1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{999B7728-5B4D-4D6A-BBE0-94DE9EE82404}"
+	ProjectSection(SolutionItems) = preProject
+		SmallWorld\smallwold.cd = SmallWorld\smallwold.cd
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

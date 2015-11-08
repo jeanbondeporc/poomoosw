@@ -7,5 +7,27 @@ namespace SmallWorld.Model
 {
     public class Position
     {
+    
+        public int x
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
+        }
+
+        public int y
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
+        }
     }
 }

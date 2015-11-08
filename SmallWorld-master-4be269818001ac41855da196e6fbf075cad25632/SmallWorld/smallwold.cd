@@ -14,7 +14,7 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="SmallWorld.Model.Player">
-    <Position X="3.5" Y="6" Width="1.5" />
+    <Position X="4" Y="6.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAUAACAAAAAAAAAAAA=</HashCode>
       <FileName>Player.cs</FileName>
@@ -39,28 +39,28 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="SmallWorld.Model.PlainTile">
-    <Position X="6.75" Y="6.25" Width="1.5" />
+    <Position X="6.5" Y="6.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>PlainTile.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="SmallWorld.Model.WaterTile">
-    <Position X="10.25" Y="6.25" Width="1.5" />
+    <Position X="11" Y="6.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>PlainTile.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="SmallWorld.Model.MountainTile">
-    <Position X="8.5" Y="6.25" Width="1.5" />
+    <Position X="8.75" Y="6.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>PlainTile.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="SmallWorld.Model.ForestTile">
-    <Position X="12" Y="6.25" Width="1.5" />
+    <Position X="13" Y="6.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>PlainTile.cs</FileName>
@@ -77,42 +77,48 @@
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="SmallWorld.Model.Position">
-    <Position X="9.25" Y="4.5" Width="1.5" />
+    <Position X="9.25" Y="4" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgAAAAAAA=</HashCode>
       <FileName>Position.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="SmallWorld.Model.orcUnit">
-    <Position X="8.75" Y="2.5" Width="1.5" />
+  <Class Name="SmallWorld.Model.OrcUnit">
+    <Position X="8.75" Y="2" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>OrcUnit.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="SmallWorld.Model.elfUnit">
-    <Position X="10.5" Y="2.5" Width="1.5" />
+  <Class Name="SmallWorld.Model.ElfUnit">
+    <Position X="10.5" Y="2" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>elfUnit.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="SmallWorld.Model.humanUnit">
-    <Position X="12.25" Y="2.5" Width="1.5" />
+  <Class Name="SmallWorld.Model.HumanUnit">
+    <Position X="12.25" Y="2" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>HumanUnit.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="SmallWorld.Model.tyleFlyweight">
-    <Position X="14.5" Y="2.5" Width="1.5" />
+  <Class Name="SmallWorld.Model.tileFlyweight">
+    <Position X="9.25" Y="8.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAUAAEAAACAAAAAAAAAAAAAEAJAAAAAAAAAAAEBAAA=</HashCode>
       <FileName>tyleFlyweight.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ForestTile" />
+      <Property Name="WaterTile" />
+      <Property Name="MountainTile" />
+      <Property Name="PlainTile" />
+    </ShowAsAssociation>
   </Class>
   <Class Name="SmallWorld.Model.Turn">
     <Position X="7" Y="0.5" Width="1.5" />
@@ -125,9 +131,9 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="SmallWorld.Model.UnitFactory">
-    <Position X="14.5" Y="1.5" Width="1.5" />
+    <Position X="14.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAQAIAAAAAAAAAAAAAA=</HashCode>
       <FileName>UnitFactory.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -139,9 +145,9 @@
     </TypeIdentifier>
   </Interface>
   <Interface Name="SmallWorld.Model.Unit">
-    <Position X="11.5" Y="4" Width="1.5" />
+    <Position X="11.75" Y="3.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAEAgAAgAAQAAAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAECgAAgAAQAAAAAAIACAAAAAAAAAAAA=</HashCode>
       <FileName>Unit.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -156,7 +162,7 @@
     </TypeIdentifier>
   </Enum>
   <Enum Name="SmallWorld.Model.ERace">
-    <Position X="10.25" Y="8" Width="1.5" />
+    <Position X="14.5" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAIAAQAAAA=</HashCode>
       <FileName>ERace.cs</FileName>

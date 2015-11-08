@@ -9,7 +9,7 @@ namespace SmallWorld.Model
     {
     }
 
-    public class WaterTile : Tile
+    public class WaterTile
     {
     }
 

@@ -36,5 +36,9 @@ namespace SmallWorld.Model
             get;
             set;
         }
+
+        void attack(Tile tile);
+
+        void move(Tile tile);
     }
 }
