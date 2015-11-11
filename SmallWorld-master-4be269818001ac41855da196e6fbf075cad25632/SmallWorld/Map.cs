@@ -51,5 +51,10 @@ namespace SmallWorld.Model
         {
             throw new System.NotImplementedException();
         }
+
+        public void setTiles(List<Tile> tiles)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

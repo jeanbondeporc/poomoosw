@@ -22,6 +22,13 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
+    <Content Include="unitStateChart.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="unitStateChart.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>unitStateChart.activitydiagram</DependentUpon>
+    </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="createGame.sequencediagram">
       <SubType>Content</SubType>
@@ -37,19 +44,19 @@
       <SubType>Content</SubType>
       <DependentUpon>game.usecasediagram</DependentUpon>
     </Content>
-    <Content Include="gameCreation.activitydiagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="gameCreation.activitydiagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>gameCreation.activitydiagram</DependentUpon>
-    </Content>
     <Content Include="gameTurn.activitydiagram">
       <SubType>Content</SubType>
     </Content>
     <Content Include="gameTurn.activitydiagram.layout">
       <SubType>Content</SubType>
       <DependentUpon>gameTurn.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="gameTurn.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="gameTurn.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>gameTurn.sequencediagram</DependentUpon>
     </Content>
     <Content Include="ModelDefinition\UML.uml">
       <SubType>Content</SubType>

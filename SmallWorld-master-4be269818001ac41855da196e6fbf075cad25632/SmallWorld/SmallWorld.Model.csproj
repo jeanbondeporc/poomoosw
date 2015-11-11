@@ -50,6 +50,7 @@
     <Compile Include="ERace.cs" />
     <Compile Include="ForestTile.cs" />
     <Compile Include="Game.cs" />
+    <Compile Include="GameBuilder.cs" />
     <Compile Include="HumanBehavior.cs" />
     <Compile Include="HumanUnit.cs" />
     <Compile Include="IMap.cs" />
@@ -57,7 +58,6 @@
     <Compile Include="ITurn.cs" />
     <Compile Include="IUndo.cs" />
     <Compile Include="Map.cs" />
-    <Compile Include="MapBuilder.cs" />
     <Compile Include="MountainTile.cs" />
     <Compile Include="MoveAction.cs" />
     <Compile Include="OrcBehavior.cs" />

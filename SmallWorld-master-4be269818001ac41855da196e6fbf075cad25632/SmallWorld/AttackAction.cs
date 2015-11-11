@@ -5,14 +5,26 @@ using System.Text;
 
 namespace SmallWorld.Model
 {
-    public class SelectAction : Action
+    public class AttackAction : Action
     {
-        public SelectAction(Unit unitToSelect)
+        public AttackAction(Unit attackerUnit, Tile targetedTile)
         {
             throw new System.NotImplementedException();
         }
 
-        public Unit previousSelectedUnit
+        public Unit attackerUnit
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+
+            set
+            {
+            }
+        }
+
+        public Unit attackedUnit
         {
             get
             {

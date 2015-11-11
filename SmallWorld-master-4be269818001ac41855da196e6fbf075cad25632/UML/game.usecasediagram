@@ -1,19 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="eaccc142-b137-4254-97e7-928bf717e6fa" name="game" linkedPackageId="b91bbea2-a4fc-46e2-b745-3a0c65416e21" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
-  <profileInstances>
-    <packageHasProfileInstances Id="0ed71f57-5571-44e9-aa05-8c29ff35a4b9">
-      <profileInstance Id="d31f1584-4c59-4933-ae90-5940fcd384da" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="cacb7a0d-41ae-4a0c-8592-6ffd365a716e">
-      <profileInstance Id="966afdda-db2c-48bb-aa30-ab020645c405" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="eaccc142-b137-4254-97e7-928bf717e6fa" name="game" linkedPackageId="b91bbea2-a4fc-46e2-b745-3a0c65416e21" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
   <packagedElements>
     <useCaseModelRootHasTypes>
       <actor Id="1fe77cae-6f65-4ac3-a0aa-db625aba7d4e" name="Joueur" isAbstract="false" isLeaf="false">
@@ -36,7 +22,7 @@
             <elementDefinition Id="f42db9ef-03e3-483e-b77c-57ed406a855c" />
           </association>
           <association Id="6504ffac-6384-425f-b01a-80843023e03f" isDerived="false" sourceEndRoleName="Joueur" targetEndRoleName="Charger&#xD;&#xA;une partie" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="b84b1d57-a926-4fa5-a3d8-ec54e9d0c385" LastKnownName="Charger&#xD;&#xA;une partie" />
+            <useCaseMoniker Id="b84b1d57-a926-4fa5-a3d8-ec54e9d0c385" LastKnownName="Charger une partie" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="70762a78-a6cc-4d83-8768-bf0fc26daf0e" name="Joueur" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -73,20 +59,154 @@
     <useCaseModelRootHasTypes>
       <useCase Id="f21e2208-dc4e-4cfa-8b0f-d99739467eb7" name="Démarrer une partie" isAbstract="false" isLeaf="false">
         <elementDefinition Id="f4071835-80d7-423c-9757-1ac488888eba" />
+        <subjects>
+          <subsystemMoniker Id="82d0e836-ade2-4b27-ac79-71cb575c8c9f" LastKnownName="Menu" />
+        </subjects>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="b84b1d57-a926-4fa5-a3d8-ec54e9d0c385" name="Charger&#xD;&#xA;une partie" isAbstract="false" isLeaf="false">
+      <useCase Id="b84b1d57-a926-4fa5-a3d8-ec54e9d0c385" name="Charger une partie" isAbstract="false" isLeaf="false">
         <elementDefinition Id="af12202d-5d32-43bc-9e81-4ab03ff7b645" />
+        <additions>
+          <include Id="b1da1d9e-043c-40d1-9568-bd6f1ed55f46">
+            <useCaseMoniker Id="33037e7a-0db2-4e9f-9dbf-66d589609eda" LastKnownName="Sauvegarder la partie" />
+            <elementDefinition Id="a7fc7f72-99a4-4c3f-a81e-dcd27d3ac920" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="82d0e836-ade2-4b27-ac79-71cb575c8c9f" LastKnownName="Menu" />
+        </subjects>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
       <useCase Id="957e2cf3-5204-4907-9d41-1284aeceeac2" name="Quitter" isAbstract="false" isLeaf="false">
         <elementDefinition Id="736e0035-1552-4b91-a6c1-76e6fb178856" />
+        <subjects>
+          <subsystemMoniker Id="82d0e836-ade2-4b27-ac79-71cb575c8c9f" LastKnownName="Menu" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="0817078f-d7e5-452c-973f-8abef9bcdf16" name="Joueur1" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7431b83d-a085-4c91-93d5-fd990b59c79b" />
+        <suppliersInternal>
+          <dependency Id="7a1c5d94-4b2b-47d4-ac9b-09f5b7752cae">
+            <actorMoniker Id="1fe77cae-6f65-4ac3-a0aa-db625aba7d4e" LastKnownName="Joueur" />
+            <elementDefinition Id="3d341d9e-b3b1-4937-8d08-0d964a8e0e42" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="4898c5ec-82fb-4bcb-81b7-3af24b3c29f5" name="Joueur2" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1f1e7798-d4d5-469b-b987-6b3c87a0cc44" />
+        <suppliersInternal>
+          <dependency Id="ff41d1cf-cc77-43d6-9705-1b09918c5744">
+            <actorMoniker Id="1fe77cae-6f65-4ac3-a0aa-db625aba7d4e" LastKnownName="Joueur" />
+            <elementDefinition Id="c5f10971-1c69-47a7-8958-455a5f3ab985" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="82d0e836-ade2-4b27-ac79-71cb575c8c9f" name="Menu" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7501c893-91b3-46e9-85af-8acf68098fde" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="b261bf96-b7d2-4320-993d-14bdb3b7c5a8" name="Jouer une partie" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7414e833-0b64-418c-8890-647152970e4c" />
+        <extendedCases>
+          <extend Id="1d891fd6-bd83-4910-a075-2de4e555d439">
+            <useCaseMoniker Id="33037e7a-0db2-4e9f-9dbf-66d589609eda" LastKnownName="Sauvegarder la partie" />
+            <elementDefinition Id="626dece2-b661-4b25-8a0c-5618ca9dfb98" />
+          </extend>
+        </extendedCases>
+        <additions>
+          <include Id="4e354904-23b7-4e2a-87bf-b6055220365e">
+            <useCaseMoniker Id="36d9a0e7-f91e-45c8-8271-67e51920b76e" LastKnownName="Choisir un pseudo" />
+            <elementDefinition Id="46d6e810-71e4-4121-ab70-3110897de439" />
+          </include>
+          <include Id="9b0a1a13-250b-47e0-9b54-b6b5e68e06e9">
+            <useCaseMoniker Id="0d543b96-310e-436e-9307-7a1a20e51eeb" LastKnownName="Choisir une race" />
+            <elementDefinition Id="d2f57422-3774-4bf7-9e45-6162bb906d87" />
+          </include>
+          <include Id="564a0ffe-7a24-4906-8826-a37c3509dd86">
+            <useCaseMoniker Id="079767c3-1874-4aee-8e15-de2b6b2cf82a" LastKnownName="Choisir un type de partie" />
+            <elementDefinition Id="0cacc918-c2e5-45a8-b3a0-886e12cb4746" />
+          </include>
+          <include Id="6c3bfa6f-9e77-4686-8296-ef029bea744d">
+            <useCaseMoniker Id="d1e65001-328a-44c9-b457-f8c288cc6060" LastKnownName="Lancer la partie" />
+            <elementDefinition Id="5e71e30f-675f-4195-8684-5646302e0e70" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <useCase Id="36d9a0e7-f91e-45c8-8271-67e51920b76e" name="Choisir un pseudo" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a14078e5-8b41-4f61-891a-eb90c843699f" />
+        <additions>
+          <include Id="922109ce-5546-4c16-b5f9-53a11b7c20b3">
+            <useCaseMoniker Id="f21e2208-dc4e-4cfa-8b0f-d99739467eb7" LastKnownName="Démarrer une partie" />
+            <elementDefinition Id="1b0c339b-672f-452b-93ae-5b83f7895ccf" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0d543b96-310e-436e-9307-7a1a20e51eeb" name="Choisir une race" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="802226cc-ccfe-4607-98a5-76cca5f56c53" />
+        <additions>
+          <include Id="8d81f96e-a6d2-42b3-9580-7193b4e714d1">
+            <useCaseMoniker Id="f21e2208-dc4e-4cfa-8b0f-d99739467eb7" LastKnownName="Démarrer une partie" />
+            <elementDefinition Id="90b40358-e67d-493f-a346-8607df5fced3" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="079767c3-1874-4aee-8e15-de2b6b2cf82a" name="Choisir un type de partie" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f4ba6493-1651-4d8e-967d-482f8cfae3ae" />
+        <additions>
+          <include Id="2d888a2d-940b-4ec0-b989-163533de177e">
+            <useCaseMoniker Id="f21e2208-dc4e-4cfa-8b0f-d99739467eb7" LastKnownName="Démarrer une partie" />
+            <elementDefinition Id="30bb8bf4-5f32-4d2f-8727-e28bac591b8b" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="d1e65001-328a-44c9-b457-f8c288cc6060" name="Lancer la partie" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6e3a6812-0afd-4bc5-b0f1-06a194958b57" />
+        <additions>
+          <include Id="ed8587a8-3afa-47e8-9ec3-d8a732ca918e">
+            <useCaseMoniker Id="f21e2208-dc4e-4cfa-8b0f-d99739467eb7" LastKnownName="Démarrer une partie" />
+            <elementDefinition Id="f60bc0ae-74a0-415f-ab28-e9484d8a2eb7" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="33037e7a-0db2-4e9f-9dbf-66d589609eda" name="Sauvegarder la partie" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9ec402a7-d84d-4a1f-9af4-48a8d7ad3143" />
       </useCase>
     </useCaseModelRootHasTypes>
   </packagedElements>
   <package Id="b91bbea2-a4fc-46e2-b745-3a0c65416e21" name="UML">
     <elementDefinition Id="4b360c37-6a26-4bfd-bde2-92a1f0c08108" />
+    <profileInstances>
+      <packageHasProfileInstances Id="0ed71f57-5571-44e9-aa05-8c29ff35a4b9">
+        <profileInstance Id="d31f1584-4c59-4933-ae90-5940fcd384da" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="cacb7a0d-41ae-4a0c-8592-6ffd365a716e">
+        <profileInstance Id="966afdda-db2c-48bb-aa30-ab020645c405" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </useCaseModelRoot>

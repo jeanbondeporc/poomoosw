@@ -7,6 +7,10 @@ namespace SmallWorld.Model
 {
     public class Game
     {
+        public Game(EGameType type)
+        {
+            throw new System.NotImplementedException();
+        }
 
         public IPlayer Player2
         {
@@ -97,21 +101,6 @@ namespace SmallWorld.Model
             set
             {
             }
-        }
-
-        public void createGame(EGameType gameType)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public Player initOrder()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public void initPlayers()
-        {
-            throw new System.NotImplementedException();
         }
 
         public void startNextTurn()

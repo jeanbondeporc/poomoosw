@@ -5,14 +5,26 @@ using System.Text;
 
 namespace SmallWorld.Model
 {
-    public class SelectAction : Action
+    public class MoveAction : Action
     {
-        public SelectAction(Unit unitToSelect)
+        public MoveAction(Unit unitToMove, Tile destination)
         {
             throw new System.NotImplementedException();
         }
 
-        public Unit previousSelectedUnit
+        public Unit unit
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+
+            set
+            {
+            }
+        }
+
+        public Tile previousTile
         {
             get
             {

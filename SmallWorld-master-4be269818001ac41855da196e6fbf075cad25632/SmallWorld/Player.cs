@@ -7,6 +7,11 @@ namespace SmallWorld.Model
 {
     public class Player : IPlayer
     {
+        public Player(String name, ERace race)
+        {
+            throw new System.NotImplementedException();
+        }
+
         public string name
         {
             get

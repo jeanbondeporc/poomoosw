@@ -21,6 +21,5 @@ namespace SmallWorld.Model
         }
 
         int getScore();
-        void initUnits();
     }
 }
